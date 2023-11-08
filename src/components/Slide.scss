@@ -1,0 +1,116 @@
+.slide1 {
+  &__hello {
+    font-size: 27px;
+    font-weight: 400;
+    padding: 0px 70px;
+    margin-top: 70px;
+  }
+
+  &__title {
+    font-size: 109px;
+    font-weight: 400;
+    padding: 0px 70px;
+  }
+
+  &__btn {
+    position: absolute;
+    bottom: 223px;
+    right: 105px;
+  }
+
+  &__pinksperm1 {
+    position: absolute;
+    top: 155px;
+    right: -30px;
+  }
+
+  &__pinksperm2 {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+  }
+
+  &__bacteria1 {
+    position: absolute;
+    top: 72px;
+    left: 0px;
+  }
+
+  &__spherabl1 {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+  }
+
+  &__spherabl2 {
+    position: absolute;
+    bottom: 60px;
+    left: 375px;
+  }
+
+  // .slide1__sphera1
+
+  &__sphera1 {
+    position: absolute;
+    top: 60px;
+    right: 210px;
+    animation: move2 6s linear infinite;
+  }
+
+  // .slide1__sphera2
+
+  &__sphera2 {
+    position: absolute;
+    top: 200px;
+    right: 50px;
+    animation: move1 6s linear infinite;
+  }
+
+  // .slide1__sphera3
+
+  &__sphera3 {
+    position: absolute;
+    bottom: 190px;
+    left: 30px;
+    animation: move2 8s linear infinite;
+  }
+
+  // .slide1__sphera4
+
+  &__sphera4 {
+    position: absolute;
+    right: 260px;
+    bottom: 0px;
+    animation: move3 6s linear infinite;
+  }
+}
+
+@keyframes move1 {
+  0%,
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  50% {
+    transform: translate(10px, 8px) rotate(5deg);
+  }
+}
+
+@keyframes move2 {
+  0%,
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  50% {
+    transform: translate(-8px, 9px) rotate(4deg);
+  }
+}
+
+@keyframes move3 {
+  0%,
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  50% {
+    transform: translate(3px, 6px) rotate(3deg);
+  }
+}

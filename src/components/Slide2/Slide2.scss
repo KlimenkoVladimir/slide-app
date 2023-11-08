@@ -1,0 +1,85 @@
+.slide2 {
+  position: relative;
+  &__container {
+    position: absolute;
+    top: 168px;
+    padding-left: 70px;
+    background-color: transparent;
+  }
+
+  &__header {
+    font-size: 27px;
+    font-weight: 400;
+    max-width: 200px;
+  }
+
+  &__box {
+    position: relative;
+    width: 775px;
+    height: 445px;
+    border-radius: 40px;
+    padding: 22px 34px 22px 48px;
+    background-color: #ffffff;
+    overflow-y: scroll;
+    z-index: 1;
+  }
+
+  &__scrollbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px; /* Ширина скроллбара */
+    height: 100%;
+    background-color: #f0f0f0; /* Цвет фона скроллбара */
+  }
+
+  &__scrollbar-thumb {
+    width: 100%;
+    height: 104px; /* Высота ползунка */
+    background-color: #888; /* Цвет ползунка */
+    cursor: pointer;
+    transform: rotate(
+      270deg
+    ); /* Поворачиваем элемент на 270 градусов (по часовой стрелке) */
+    height: 40px; /* Задаем желаемую высоту */
+    width: 50px; /* Задаем желаемую ширину */
+  }
+
+  &__scrollbar-thumb::-webkit-slider-thumb {
+    height: 20px; /* Высота ползунка */
+    width: 104px; /* Ширина ползунка */
+    background-color: pink; /* Цвет ползунка */
+    border: none; /* Убираем границу */
+    border-radius: 0; /* Убираем скругления (если они есть) */
+    cursor: pointer; /* Задаем стандартный курсор */
+    appearance: none; /* Убираем стандартный стиль браузера */
+  }
+
+  &__text {
+    font-size: 22px;
+    margin-top: 15px;
+  }
+
+  &__text--bold {
+    font-weight: 700;
+  }
+
+  &__pinksperm3 {
+    position: absolute;
+    top: 74px;
+    right: 0px;
+    opacity: 0; /* Начальная высокая прозрачность */
+    animation: fadeIn 1s forwards; /* Применяем анимацию fadeIn с продолжительностью 1 секунда */
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translate(0, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-10px, -10px); /* Небольшое смещение вверх и влево */
+  }
+}
